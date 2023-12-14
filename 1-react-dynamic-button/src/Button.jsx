@@ -8,14 +8,14 @@ const Button = ({
       primary: "bg-blue-500 text-white",
       danger: "bg-red-500 text-white"
    }
-   
+
    const className = clsx(
       "px-4 py-2 rounded-md",
       variants[variant]
    )
 
    return (
-      <div className={className}>Button</div>
+      <button className={className}>Button</button>
    )
 }
 export default Button
