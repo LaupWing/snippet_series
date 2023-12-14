@@ -1,3 +1,5 @@
+import clsx from "clsx"
+
 const Button = ({
    variant = "default"
 }) => {
@@ -6,6 +8,14 @@ const Button = ({
       primary: "bg-blue-500 text-white",
       danger: "bg-red-500 text-white"
    }
-   return <div>Button</div>
+   
+   const className = clsx(
+      "px-4 py-2 rounded-md",
+      variants[variant]
+   )
+
+   return (
+      <div className={className}>Button</div>
+   )
 }
 export default Button
