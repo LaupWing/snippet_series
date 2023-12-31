@@ -1,9 +1,10 @@
 import { useState } from 'react'
+import ResponsiveContainer from "./ResponsiveContainer"
 
 function App() {
    return (
-      <main className="w-screen h-screen bg-red-400">
-         
+      <main className="w-screen h-screen flex justify-center items-center bg-red-400">
+         <ResponsiveContainer />
       </main>
    )
 }
